@@ -1,0 +1,372 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/footer1.css">
+    <link rel="stylesheet" href="../CSS/Nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }
+       body {
+    background-color: rgb(40, 40, 40);
+ }
+.contact{
+    position: initial;
+    min-height: 100vh;
+    padding:  0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "poppins",sans-serif;
+    margin-top: -10vh;
+    z-index: 1;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px !important;
+    
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+    
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px !important;
+    font-size: 18px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    
+
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: crimson;
+    
+}
+.contactForm{
+    width: 35%;
+    padding: 40px;
+    background: #fff;
+    
+}
+.contactForm h2{
+    font-size: 30px;
+    color: crimson;
+    font-weight: 500;
+    
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px !important;
+    font-family: "poppins",sans-serif;
+    
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0 !important;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    font-family: "poppins",sans-serif;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0 !important;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox input:not(:placeholder-shown) ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: crimson;
+    font-size: 12px;
+    transform: translateY(-20px);
+    
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: crimson;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    
+}
+@media (max-width: 991px) {
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px !important;
+    }
+    .container .contactInfo,
+    .container .contactForm{
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+  .contact{
+    margin-top: 20rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+              #hovwe {
+                padding: 10px;
+              }
+              
+              li {
+                float: none;
+                margin-top: 10px;
+                margin-left: 0;
+                text-align: center;
+              }
+              
+              .dropdown {
+                display: block;
+                margin-top: 10px;
+              }
+              
+              .dropdown-content {
+                position: static;
+                display: none;
+                width: 100%;
+                height: auto;
+              }
+              
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }
+              
+              .link {
+                padding-bottom: 0;
+              }
+              
+              .top {
+                font-size: 2.8em;
+              }
+            }
+            
+                @media only screen and (max-width: 768px) {
+                  header {
+                    flex-direction: column;
+                    vertical-align: top;
+                    margin-top: 0 ;
+                  }
+                  
+                  ul {
+                    flex-direction: column;
+                    margin-top: 0 ;
+                    vertical-align: top ;
+                  }
+                  
+                  li {
+                    float: none;
+                    margin: 10px 0;
+                    text-align: center;
+                  }
+                  
+                  .dropdown {
+                    display: block;
+                  }
+                  
+                  .dropdown-content {
+                    position: static;
+                    display: none;
+                    width: 100%;
+                  }
+                  
+                  .dropdown:hover .dropdown-content {
+                    display: block;
+                  }
+                  .heading{
+                    margin-top: 9em;
+                  }
+                  iframe{
+                    margin-top: 28em;
+                  }
+                }
+                #Logo{
+                  vertical-align: middle;
+                  margin-top: -10px;
+                }
+    </style>
+</head>
+<body>
+    
+    <div class="bcd">
+        <div class="full-nav" style="width: 100%;">
+            <div class="top" style="text-align: center; font-size: 3.5em;font-weight: bold;background-color: rgba(255, 255, 255, 0.925);">
+           
+              
+            <header style="color: rgb(40, 40, 40);font-family: MyFont2;margin-left: 31%;"><div id="p44"><img id="Logo" src="../IMAGES/LOGO.png">THEAT<span style="color: red;">R</span>EDOTCOM</div></header>
+            </div>
+          </div>
+        
+            <nav class="navbar" >
+              <ul style="width: 100%;">
+                <li style="font-size:1.2em;font-family:Arial, Helvetica, sans-serif;"><a href="HOME.html" class="link">Home</a></li>
+                <li class="dropdown" style="margin-left: 10%;">
+                  <a style="font-size:1.2em;font-family:Arial, Helvetica, sans-serif;" href="#" class="dropbtn">Categories</a>
+                  <div class="dropdown-content">
+                    <a style="font-family:Arial, Helvetica, sans-serif;" href="English movies.html">English movies</a>
+                    <a style="font-family:Arial, Helvetica, sans-serif;" href="Hindi movies.html">Hindi movies</a>
+                    <a style="font-family:Arial, Helvetica, sans-serif;" href="Urdu Movies.html">Urdu movies</a>
+                  </div>
+                </li>
+                <li style="font-size:1.2em;margin-left: 10%;font-family: Arial, Helvetica, sans-serif;"><a href="Auditorium.html" class="link">Auditorium</a></li>
+                <li style="font-size:1.2em;margin-left: 10%;font-family: Arial, Helvetica, sans-serif;"><a href="CONTACT US.html" class="link">Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+    
+
+
+    <section class="contact">
+        <div class="container">
+           <div class="contactInfo">
+              <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>SD-1, Block A North<br>Nazimabad Town, Karachi,<br>74700</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="text">
+                  <h3>Phone</h3>
+                  <p>0336-2346044</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="text">
+                  <h3>E-Mail</h3>
+                  <p>Uzaifkhatri91@gmail.com</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                <div class="text">
+                  <h3>Website</h3>
+                  <p>Theatredotcom</p>
+                </div>
+              </div>
+           </div>
+           <div class="contactForm">
+            <form>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input placeholder=" " type="text" required="required">
+                    <span>Full Name</span>
+                </div>
+
+                <div class="inputBox">
+                    <input placeholder=" " type="" required="required">
+                    <span>Contact No.</span>
+                </div>
+
+                <div class="inputBox">
+                    <input placeholder=" " type="email" required="required">
+                    <span>Email</span>
+                </div>
+
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type Your Message...</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+           </div>
+        </div>
+       </section>
+       
+   
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h2 style="margin-top: 5%;">About Us</h2>
+            <p style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;">Welcome to our vibrant theatre community! We ignite imaginations and share the magic of live performance. Join us on this captivating journey through the world of theatre!</p>
+          </div>
+          <div class="footer-section">
+            <h2 style="margin-top: 5%;">Quick Links</h2>
+            <ul>
+              <li><a style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;" href="HOME.html">Home</a></li>
+              <li><a style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;" href="English movies.html">Movies</a></li>
+              <li><a style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;" href="Audiotrium.html">Auditorium</a></li>
+              <li><a style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;" href="CONTACT US.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h2 style="margin-top: 5%;">Contact Information</h2>
+            <p style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;">Address: North Nazimabad</p>
+            <p style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;">Email: info@example.com</p>
+            <p style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;">Phone: +1 123-456-7890</p>
+          </div>
+          <div class="footer-section" id="hohun">
+            <h2 style="margin-top: 5%;">Follow Us</h2>
+            <ul class="social-media-icons">
+              <li><a target="_blank" href="https://www.facebook.com/APTECH.Pakistan"><img src="../IMAGES/2021_Facebook_icon.svg.webp "class="clr" style="color: beige;  height: 13%; width: 11%;"></a></li>
+              <li><a target="_blank" href="https://twitter.com/APTECHPAKISTAN?s=20"><img src="../IMAGES/icons8-twitter-48.png" style="color: beige;  height: 15%; width: 11%;"></a></li>
+              <li><a target="_blank" href="https://instagram.com/aptechpk_official?igshid=MzRlODBiNWFlZA=="><img src="../IMAGES/Instagram_logo_2022.svg.webp" style="color: beige;height: 13%; width: 11%;"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p style="color: rgb(40, 40, 40);font-family: poppins ,sans-serif;" class="pop">&copy; 2023 theatredotcom. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
